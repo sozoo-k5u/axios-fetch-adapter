@@ -103,6 +103,9 @@ async function getResponse(
   try {
     stageOne = await adapterFetch(request);
   } catch (e) {
+    if (e instanceof AxiosError) {
+				return e;	
+		}
     return createError("Network Error", config, "ERR_NETWORK", request);
   }
 
