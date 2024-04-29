@@ -26,7 +26,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
+import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 
 import buildURL from "axios/lib/helpers/buildURL";
 import { buildFullPath } from "./buildFullPath";
@@ -103,7 +103,7 @@ async function getResponse(
   try {
     stageOne = await adapterFetch(request);
   } catch (e) {
-    if (e instanceof AxiosError) {
+    if (axios.isAxiosError(e)) {
 				return e;	
 		}
     return createError("Network Error", config, "ERR_NETWORK", request);

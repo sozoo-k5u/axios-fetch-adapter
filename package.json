@@ -1,6 +1,6 @@
 {
-  "name": "@haverstack/axios-fetch-adapter",
-  "version": "0.12.0",
+  "name": "sozoo-axios-fetch-adapter",
+  "version": "0.12.3",
   "description": "An Axios adapter that uses native fetch or custom fetch functions. Useful for Cloudflare Workers and ServiceWorker environments.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -40,12 +40,12 @@
     "cloudflare",
     "serviceworker"
   ],
-  "author": "Jen Garcia <jen@haverstack.com> (https://haverstack.com/)",
+  "author": "Sozoo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haverstack/axios-fetch-adapter/issues"
+    "url": "https://github.com/sozoo-k5u/axios-fetch-adapter/issues"
   },
-  "homepage": "https://github.com/haverstack/axios-fetch-adapter#readme",
+  "homepage": "https://github.com/sozoo-k5u/axios-fetch-adapter#readme",
   "devDependencies": {
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
